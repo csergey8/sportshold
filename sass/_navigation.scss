@@ -1,0 +1,89 @@
+.navigation {
+  
+  &__topmenu {
+    font-family: "TruenoLt", sans-serif;
+    font-size: 1.3rem;
+    height: 5rem;
+    background: $color-primary;
+    color: #ffffff;
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+      
+      
+      }
+
+    &--left {
+      display: flex;
+      list-style: none;
+      width: 31.5rem;
+      justify-content: space-between;
+      padding-top: 1.6rem;
+
+      & > * {
+        //padding-right: 4rem;
+        
+      }
+    }
+    &--right {
+      display: flex;
+      list-style: none;
+      width: 31.7rem;
+      justify-content: space-between;
+
+      & span {
+        color: #dcc5b7;
+      }
+
+      & li:nth-child(1) {
+        position: relative;
+        left: 2rem;
+        bottom: 0.1rem;
+      }
+
+      & > li {
+        padding: 1.2rem 1rem;
+      }
+
+      & > .active{
+        //padding-right: 4rem;
+        background: $color-pink;
+      }
+    }
+    }
+
+  &__main {
+    height: 7.6rem;
+    background: $color-secondary;
+
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &--logo {
+      padding-top: 2.2rem;
+    }
+
+    &--menu {
+      display: flex;
+      list-style: none;
+      color: #fff;
+      font-size: 1.6rem;
+      width: 60rem;
+      justify-content: space-between;
+
+      & li {
+        //padding-right: 3.7rem;
+        padding-top: 0.2rem;
+        line-height: 7rem;
+      }
+
+      & .active {
+        color: $color-pink;
+        border-bottom: 0.4rem solid $color-pink;
+        line-height: 7rem;
+      }
+    }
+  }
+  }

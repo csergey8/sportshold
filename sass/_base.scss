@@ -1,0 +1,63 @@
+/* COLORS VARIABLES */
+
+$color-primary: #482424;
+$color-secondary: #633231;
+$color-pink: #ff7270;
+$color-grey: #f0efee;
+$color-grey-2: #8a8784;
+
+/* BREAKPOINTS VARIABLES */
+$bp-largest: 75em; //1200px
+$bp-large: 68.75em;
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
+/* Fonts */
+@font-face {
+  font-family: Trueno;
+  font-weight: bold;
+  src: url("../css/fonts/TruenoBd.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TruenoBlk;
+  font-weight: bold;
+  src: url("../css/fonts/TruenoBlk.otf") format("opentype");
+}
+
+@font-face {
+  font-family: TruenoLt;
+  font-weight: lighter;
+  src: url("../css/fonts/TruenoLt.otf") format("opentype");
+}
+
+
+
+/* BASE HTML SETTINGS */
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem=10px, 10px/16px = 62.5%
+
+  @media only screen and (max-width: $bp-large) {
+      font-size: 50%;
+  }
+}
+
+body {
+  font-family: "TruenoLt", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+  min-height: 100vh;
+}
