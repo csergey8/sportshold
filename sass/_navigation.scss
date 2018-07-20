@@ -18,7 +18,7 @@
       list-style: none;
       width: 31.5rem;
       justify-content: space-between;
-      padding-top: 1.6rem;
+      align-self: center;
 
       & > * {
         //padding-right: 4rem;
@@ -38,11 +38,12 @@
       & li:nth-child(1) {
         position: relative;
         left: 2rem;
-        bottom: 0.1rem;
+        top: 0.3rem;
       }
 
       & > li {
-        padding: 1.2rem 1rem;
+        padding: 1.3rem 1rem;
+        align-self: center;
       }
 
       & > .active{
@@ -62,7 +63,7 @@
     }
 
     &--logo {
-      padding-top: 2.2rem;
+      align-self: center;
     }
 
     &--menu {

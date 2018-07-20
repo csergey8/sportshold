@@ -38,7 +38,7 @@ body {
   min-height: 100vh; }
 
 .container {
-  max-width: 120rem;
+  max-width: 111rem;
   margin: 0rem auto; }
   @media only screen and (max-width: 75em) {
     .container {
@@ -60,7 +60,7 @@ body {
     list-style: none;
     width: 31.5rem;
     justify-content: space-between;
-    padding-top: 1.6rem; }
+    align-self: center; }
   .navigation__topmenu--right {
     display: flex;
     list-style: none;
@@ -71,9 +71,10 @@ body {
     .navigation__topmenu--right li:nth-child(1) {
       position: relative;
       left: 2rem;
-      bottom: 0.1rem; }
+      top: 0.3rem; }
     .navigation__topmenu--right > li {
-      padding: 1.2rem 1rem; }
+      padding: 1.3rem 1rem;
+      align-self: center; }
     .navigation__topmenu--right > .active {
       background: #ff7270; }
 
@@ -84,7 +85,7 @@ body {
     display: flex;
     justify-content: space-between; }
   .navigation__main--logo {
-    padding-top: 2.2rem; }
+    align-self: center; }
   .navigation__main--menu {
     display: flex;
     list-style: none;
@@ -109,8 +110,10 @@ body {
     height: 72rem;
     bottom: 7.5rem; }
   .header__proposal {
-    margin-top: 12.2rem;
-    color: #633231; }
+    align-self: center;
+    margin-left: 3.8rem;
+    color: #633231;
+    align-items: center; }
     .header__proposal--price {
       font-size: 3rem; }
     .header__proposal--title {
@@ -139,3 +142,104 @@ body {
       .header__proposal--button:hover {
         background: #ff4a47;
         cursor: pointer; }
+
+.section__categories {
+  margin-top: 5rem;
+  height: 54rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 3rem; }
+  .section__categories--collection {
+    background-image: url("../img/categories_collection_nike.png");
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3; }
+  .section__categories--logo {
+    position: absolute;
+    padding-top: 3rem;
+    padding-left: 3rem; }
+  .section__categories--title {
+    text-align: center;
+    max-width: 28rem;
+    padding-top: 4.5rem;
+    color: white;
+    text-transform: capitalize;
+    font-size: 3rem;
+    margin: 0 auto; }
+    .section__categories--title span {
+      text-transform: uppercase;
+      font-family: "Trueno", sans-serif;
+      letter-spacing: 1px;
+      color: #42d9ce; }
+  .section__categories--newarrivals {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background: #ff7270;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    position: relative; }
+    .section__categories--newarrivals-title {
+      color: #ffffff;
+      font-size: 3rem;
+      left: 43%;
+      top: 20%;
+      position: relative;
+      width: 25rem;
+      text-align: center; }
+      .section__categories--newarrivals-title span {
+        font-family: "Trueno", sans-serif;
+        text-transform: uppercase; }
+    .section__categories--newarrivals-button {
+      border: none;
+      color: #ffffff;
+      background: #633231;
+      width: 14.4rem;
+      height: 4.8rem;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      margin-top: 1.5rem;
+      font-family: "Trueno", sans-serif; }
+    .section__categories--newarrivals-image {
+      position: absolute;
+      bottom: -4px; }
+  .section__categories--athletes {
+    background: url("../img/categories_athletes.png") no-repeat; }
+    .section__categories--athletes-title {
+      text-align: center;
+      color: #ffffff;
+      font-size: 3rem;
+      position: relative;
+      bottom: -13rem; }
+      .section__categories--athletes-title span {
+        color: #ff7270;
+        font-family: "Trueno", sans-serif;
+        text-transform: uppercase; }
+  .section__categories--premium {
+    background: #cecece url("../img/categories_premium.png") bottom no-repeat; }
+    .section__categories--premium-title {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 3rem;
+      color: #6a7072; }
+      .section__categories--premium-title span {
+        text-transform: uppercase;
+        color: #fff;
+        font-family: "Trueno", sans-serif; }
+
+.section__button--collection {
+  color: red;
+  position: absolute;
+  bottom: 5rem;
+  width: 21.1rem;
+  height: 5rem;
+  color: black;
+  font-family: "Trueno", sans-serif;
+  border: 0;
+  background: #42d9ce;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translateX(-50%); }
