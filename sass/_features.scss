@@ -1,0 +1,26 @@
+.section {
+  &__features {
+    background: $color-primary;
+    &--container {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      color: #fff;
+      font-size: 1.6rem;
+      height: 20rem;
+      border-bottom: 1px solid #7a5150;
+    }
+
+    &--item {
+      align-self: center;
+
+
+      & i {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+        color: $color-pink;
+      }
+
+    }
+  }
+}

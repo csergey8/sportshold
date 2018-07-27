@@ -1,0 +1,65 @@
+.section {
+  &__news {
+    margin-top: 10rem;
+
+    &--title {
+      font-size: 3rem;
+      font-family: "Trueno", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: $color-primary;
+    }
+
+    &--cards {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: space-between;
+      color: #fff;
+
+      
+    }
+
+    
+
+    &--card {
+      width: 35rem;
+      height: 35rem;
+      border: 1px solid #e0dfde;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      &-date {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+      }
+
+      &-text {
+        font-size: 1.6rem;
+      }
+
+      &-comments {
+        display: flex;
+        color: $color-pink;
+        font-size: 1.3rem;
+
+        & i {
+          margin-right: 6px;
+          font-size: 1.6rem;
+          position: relative;
+          top: 2px;
+        }
+      }
+
+      &:nth-child(1) {
+        background: url('../img/new_1.png');
+      }
+      &:nth-child(2) {
+        background: url('../img/new_2.png');
+      }
+      &:nth-child(3) {
+        background: url('../img/new_3.png');
+      }  
+    }
+  }
+}

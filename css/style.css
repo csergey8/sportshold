@@ -243,3 +243,244 @@ body {
   text-transform: uppercase;
   left: 50%;
   transform: translateX(-50%); }
+
+.catalog__title {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 3rem; }
+  .catalog__title--item {
+    margin: 0 2rem;
+    color: #bdb9b5; }
+    .catalog__title--item:nth-child(1) {
+      color: #623232;
+      font-family: "Trueno", sans-serif; }
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 25.5rem);
+  grid-template-rows: repeat(2, 35rem);
+  margin-top: 5rem;
+  grid-gap: 3rem; }
+
+.catalog__card {
+  border: 1px solid #e0dfde;
+  padding: 3rem; }
+  .catalog__card--price {
+    font-size: 2.4rem;
+    color: #928f8c; }
+
+.catalog__brands {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem; }
+  .catalog__brands--item:nth-child(even) {
+    position: relative;
+    top: 1rem; }
+
+.section__review {
+  margin-top: 10rem;
+  height: 57rem;
+  background: url("../img/review_bg.png") no-repeat center; }
+  .section__review--users {
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem; }
+    .section__review--users img {
+      padding-bottom: 2.8rem; }
+  .section__review--text {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin: 5rem 0;
+    padding: 5rem;
+    text-align: center;
+    font-size: 1.6rem;
+    position: relative; }
+  .section__review--text:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-top: 0;
+    margin-left: -25px;
+    margin-top: -25px; }
+
+.review__user {
+  margin: 0 4rem;
+  text-align: center; }
+  .review__user:nth-child(odd) {
+    opacity: 0.5; }
+  .review__user--stars {
+    color: #ff7270;
+    font-size: 2rem; }
+  .review__user--name {
+    font-size: 1.6rem;
+    color: #fff; }
+
+.section__news {
+  margin-top: 10rem; }
+  .section__news--title {
+    font-size: 3rem;
+    font-family: "Trueno", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #482424; }
+  .section__news--cards {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    color: #fff; }
+  .section__news--card {
+    width: 35rem;
+    height: 35rem;
+    border: 1px solid #e0dfde;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .section__news--card-date {
+      font-size: 1.6rem;
+      text-transform: uppercase; }
+    .section__news--card-text {
+      font-size: 1.6rem; }
+    .section__news--card-comments {
+      display: flex;
+      color: #ff7270;
+      font-size: 1.3rem; }
+      .section__news--card-comments i {
+        margin-right: 6px;
+        font-size: 1.6rem;
+        position: relative;
+        top: 2px; }
+    .section__news--card:nth-child(1) {
+      background: url("../img/new_1.png"); }
+    .section__news--card:nth-child(2) {
+      background: url("../img/new_2.png"); }
+    .section__news--card:nth-child(3) {
+      background: url("../img/new_3.png"); }
+
+.section__feedback {
+  background: #ff7270;
+  margin-top: 10rem; }
+  .section__feedback--container {
+    display: flex;
+    height: 20rem; }
+    .section__feedback--container i {
+      align-self: center;
+      font-size: 5.5rem;
+      color: #fff;
+      padding-right: 3rem;
+      position: relative;
+      top: 7px; }
+  .section__feedback--text {
+    align-self: center;
+    color: #fff; }
+    .section__feedback--text-title {
+      font-size: 3rem;
+      font-family: "Trueno", sans-serif;
+      text-transform: uppercase; }
+    .section__feedback--text-desc {
+      font-size: 1.6rem;
+      line-height: 1.5rem; }
+  .section__feedback--button {
+    align-self: center;
+    height: 4.8rem;
+    margin-left: auto;
+    font-size: 1.6rem;
+    font-family: "Trueno", sans-serif;
+    text-transform: uppercase;
+    background: #482424;
+    border: none;
+    color: #fff;
+    padding: 0 3rem; }
+
+.section__features {
+  background: #482424; }
+  .section__features--container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    height: 20rem;
+    border-bottom: 1px solid #7a5150; }
+  .section__features--item {
+    align-self: center; }
+    .section__features--item i {
+      font-size: 4rem;
+      margin-bottom: 3rem;
+      color: #ff7270; }
+
+.section__menu {
+  background: #482424; }
+  .section__menu--container {
+    border-bottom: 1px solid #7a5150;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10rem;
+    color: #fff; }
+
+.menu__contacts {
+  flex-grow: 3;
+  margin-top: 2rem;
+  line-height: 3rem; }
+  .menu__contacts--title {
+    font-size: 1.6rem;
+    font-family: "Trueno", sans-serif;
+    text-transform: uppercase;
+    color: #ff7270; }
+  .menu__contacts--text {
+    font-size: 1.6rem; }
+  .menu__contacts--item {
+    margin-bottom: 3rem; }
+    .menu__contacts--item i {
+      background: #ff7270;
+      float: left;
+      width: 5.5rem;
+      height: 5.5rem;
+      text-align: center;
+      vertical-align: middle;
+      position: relative;
+      margin-right: 1rem;
+      font-size: 3rem;
+      top: 50%; }
+    .menu__contacts--item::after {
+      content: "";
+      clear: both;
+      display: table; }
+    .menu__contacts--item i:before {
+      vertical-align: middle; }
+
+.menu__items {
+  flex-grow: 2;
+  font-size: 1.6rem;
+  line-height: 4rem; }
+  .menu__items--title {
+    font-family: "Trueno", sans-serif;
+    text-transform: uppercase;
+    color: #ff7270; }
+
+footer {
+  background: #482424; }
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 11.6rem;
+  color: #fff; }
+  .footer__container--rights {
+    font-size: 1.6rem; }
+  .footer__container--social {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 18rem; }
+    .footer__container--social > * {
+      font-size: 2rem; }

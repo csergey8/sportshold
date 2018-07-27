@@ -1,0 +1,28 @@
+footer {
+  background: $color-primary;
+}
+
+.footer {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11.6rem;
+    color: #fff;
+
+    &--rights {
+      font-size: 1.6rem;
+    }
+
+    &--social {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      width: 18rem;
+
+      & > * {
+        font-size: 2rem;
+      }
+    }
+  }
+}
