@@ -28,11 +28,53 @@
   &__card {
     border: 1px solid #e0dfde;
     padding: 3rem;
+    position: relative;
+    color: #bdb9b5;
+
+    &--model {
+      font-size: 1.6rem;
+    }
+
+    &--gender {
+      font-size: 1.6rem;
+      font-family: "Trueno", sans-serif;
+    }
+
+    &--id {
+      font-size: 1.3rem;
+    }
+
+
+    & img {
+      padding: 2rem 0;
+    }
 
 
     &--price {
       font-size: 2.4rem;
       color: #928f8c;
+      margin-bottom: 3.2rem;
+
+      &-sale {
+        color: $color-pink;
+        font-size: 3rem;
+      }
+
+      &-old {
+        color: #928f8c;
+        font-size: 1.6rem;
+        text-decoration: line-through;
+      }
+
+      &--percentage {
+        position: absolute;
+        right: 0;
+        top: 2rem;
+        font-size: 1.6rem;
+        color: #fff;
+        background: $color-pink;
+        padding: 1rem;
+      }
     }
   }
 

@@ -266,10 +266,37 @@ body {
 
 .catalog__card {
   border: 1px solid #e0dfde;
-  padding: 3rem; }
+  padding: 3rem;
+  position: relative;
+  color: #bdb9b5; }
+  .catalog__card--model {
+    font-size: 1.6rem; }
+  .catalog__card--gender {
+    font-size: 1.6rem;
+    font-family: "Trueno", sans-serif; }
+  .catalog__card--id {
+    font-size: 1.3rem; }
+  .catalog__card img {
+    padding: 2rem 0; }
   .catalog__card--price {
     font-size: 2.4rem;
-    color: #928f8c; }
+    color: #928f8c;
+    margin-bottom: 3.2rem; }
+    .catalog__card--price-sale {
+      color: #ff7270;
+      font-size: 3rem; }
+    .catalog__card--price-old {
+      color: #928f8c;
+      font-size: 1.6rem;
+      text-decoration: line-through; }
+    .catalog__card--price--percentage {
+      position: absolute;
+      right: 0;
+      top: 2rem;
+      font-size: 1.6rem;
+      color: #fff;
+      background: #ff7270;
+      padding: 1rem; }
 
 .catalog__brands {
   margin-top: 10rem;
@@ -280,10 +307,16 @@ body {
     position: relative;
     top: 1rem; }
 
+.background__container {
+  background: #482424; }
+
 .section__review {
   margin-top: 10rem;
   height: 57rem;
-  background: url("../img/review_bg.png") no-repeat center; }
+  background: linear-gradient(to bottom, rgba(72, 36, 35, 0.7) 50%, rgba(72, 36, 35, 0.9) 100%), url("../img/review_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
   .section__review--users {
     display: flex;
     justify-content: center;
@@ -440,6 +473,7 @@ body {
   .menu__contacts--item {
     margin-bottom: 3rem; }
     .menu__contacts--item i {
+      padding-top: 1rem;
       background: #ff7270;
       float: left;
       width: 5.5rem;
